@@ -1,0 +1,22 @@
+#include <vector>
+#include <string>
+using namespace std;
+
+class Solution {
+public:
+    int findNumbers(vector<int>& nums) {
+        int count = 0;
+
+        for(int num: nums){
+            string s= to_string(num);
+            if(s.length() % 2 == 0){
+                count++;
+            }
+        }
+        return count;
+    }
+};
+int main(){
+
+    return 0;
+}
